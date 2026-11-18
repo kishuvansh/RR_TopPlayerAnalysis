@@ -4,6 +4,8 @@ An interactive Streamlit dashboard for a data-driven system that ranks the T20 b
 match-winning value under pressure. It covers IPL and men's T20I ball-by-ball data, January 2022 – November 2026
 (780 clean matches, 186,246 deliveries).
 
+**Live app:** <https://rajasthanroyals.streamlit.app/>
+
 **Method in one line:** pressure = how much a single delivery can change who wins (a win-probability Leverage Index);
 performance = opponent- and context-adjusted win probability added on high-pressure balls, compared with each player's
 own ordinary baseline.
@@ -53,6 +55,7 @@ data/                      # precomputed outputs only (~360 KB); no raw ball-by-
 tests/test_dashboard.py    # page smoke tests, widget interaction tests, value cross-checks
 screenshots/               # page screenshots
 .streamlit/config.toml     # dark theme
+.github/                   # keep-awake workflow + the headless-browser script it runs
 requirements.txt
 ```
 
@@ -88,8 +91,28 @@ repository (`SupeRR_Round1_Work/dashboard`). In a standalone deployment they are
 3. Go to <https://share.streamlit.io>, sign in with GitHub, and click **Create app → Deploy a public app from GitHub**.
 4. Repository: your repo · Branch: `main` · Main file path: **`app.py`**.
 5. Under **Advanced settings**, choose **Python 3.12**. No secrets or environment variables are needed.
-6. Optionally set a custom subdomain, e.g. `superr-pressure.streamlit.app`, then click **Deploy**. The first build takes 2–4 minutes.
+6. Optionally set a custom subdomain (this app uses `rajasthanroyals.streamlit.app`), then click **Deploy**. The first build takes 2–4 minutes.
 7. Open the public URL, click through every page, and add the URL to your Unstop submission.
+
+### Keep the app awake
+
+Streamlit Community Cloud puts an app to sleep after 12 hours without visitors. A judge who opens a sleeping app sees a
+"wake up" screen and waits about a minute. `.github/workflows/keep-awake.yml` prevents that: every 4 hours it opens the
+app in a headless browser, clicks the wake-up button if the app has fallen asleep, and checks that the dashboard
+actually loads. A plain `curl` ping is not enough, because it never opens an app session.
+
+1. The workflow already points at <https://rajasthanroyals.streamlit.app/>, so no setup is needed for the URL.
+   If the app ever moves, either edit `APP_URL` in `.github/workflows/keep-awake.yml` or add a repository variable
+   (**Settings → Secrets and variables → Actions → Variables → New repository variable**) named `STREAMLIT_APP_URL`
+   with the new URL; the variable takes priority.
+2. Make sure the `.github/` folder is in the repository (it is hidden in Finder; `git push` includes it).
+3. Open the **Actions** tab. If GitHub asks, click **I understand my workflows, go ahead and enable them**.
+4. Click **Keep Streamlit app awake → Run workflow** once to test it. A green tick means the app loaded. A red cross
+   means it did not; the run's **Artifacts** section has a screenshot of what the browser saw.
+
+After that it runs automatically. GitHub may start scheduled runs a few minutes late, which does not matter against
+a 12-hour limit. It also emails you if a run fails. The workflow's last step stops GitHub from switching off the
+schedule after 60 days without repository activity.
 
 **Suggested app title:** *Who Delivers When It Matters — SupeRR Selector S2*
 **Suggested description:** *Interactive companion to my SupeRR Selector Season 2 Round 1 submission: a win-probability
