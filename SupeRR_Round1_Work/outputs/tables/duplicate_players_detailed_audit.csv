@@ -1,0 +1,15 @@
+name,player_id,clean_matches,raw_matches,clean_date_range,teams,batting_hand,bowling_style,hypothesis
+Abdul Samad,7446,41,41,2022-03-29 to 2026-05-23,"Lucknow Super Giants, Sunrisers Hyderabad",RHB,Right-arm Leg-Break,Conclusively different people: different countries/franchises and distinct playing careers.
+Abdul Samad,6922,4,9,2025-03-16 to 2026-10-13,"Pakistan, Pakistan A",RHB,Right-arm Leg-Break,Conclusively different people: different countries/franchises and distinct playing careers.
+Bashir Ahmad,29833,1,1,2025-10-05 to 2025-10-05,Afghanistan,LHB,Left-arm Fast,Hypothesis: Likely the same person assigned separate ID in developmental / associate tournament. NOT merged; flagged in WEAKNESSES.md.
+Bashir Ahmad,39479,0,0,None in clean,Afghanistan A,Unknown,Unknown,Hypothesis: Likely the same person assigned separate ID in developmental / associate tournament. NOT merged; flagged in WEAKNESSES.md.
+Basil Hameed,8638,9,9,2022-08-21 to 2026-01-29,United Arab Emirates,RHB,Right-arm offbreak,Hypothesis: Likely the same person assigned separate ID in developmental / associate tournament. NOT merged; flagged in WEAKNESSES.md.
+Basil Hameed,39444,0,3,None in clean,United Arab Emirates,RHB,Right-arm offbreak,Hypothesis: Likely the same person assigned separate ID in developmental / associate tournament. NOT merged; flagged in WEAKNESSES.md.
+Haider Ali,7338,9,12,2022-09-20 to 2022-10-14,"Pakistan, Pakistan A",RHB,Right-arm Leg-Break,Conclusively different people: different countries/franchises and distinct playing careers.
+Haider Ali,28756,12,12,2025-05-17 to 2026-01-31,United Arab Emirates,RHB,Slow left-arm orthodox,Conclusively different people: different countries/franchises and distinct playing careers.
+Mohammad Ali,3083,0,0,None in clean,Pakistan,Unknown,Unknown,Hypothesis: Likely the same person assigned separate ID in developmental / associate tournament. NOT merged; flagged in WEAKNESSES.md.
+Mohammad Ali,20229,2,3,2025-03-16 to 2025-03-26,Pakistan,RHB,Right-arm medium-fast,Hypothesis: Likely the same person assigned separate ID in developmental / associate tournament. NOT merged; flagged in WEAKNESSES.md.
+Muhammad Farooq,27373,1,6,2025-09-05 to 2025-09-05,United Arab Emirates,RHB,Right-arm Leg-Break,Hypothesis: Likely the same person assigned separate ID in developmental / associate tournament. NOT merged; flagged in WEAKNESSES.md.
+Muhammad Farooq,28978,0,0,None in clean,United Arab Emirates,Unknown,Unknown,Hypothesis: Likely the same person assigned separate ID in developmental / associate tournament. NOT merged; flagged in WEAKNESSES.md.
+Rashid Khan,4722,118,122,2022-03-28 to 2026-11-01,"Afghanistan, Gujarat Titans",RHB,Right-arm Leg-Break,Conclusively different people: different countries/franchises and distinct playing careers.
+Rashid Khan,20172,0,0,None in clean,Nepal,Unknown,Unknown,Conclusively different people: different countries/franchises and distinct playing careers.

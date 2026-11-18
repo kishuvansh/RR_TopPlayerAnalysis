@@ -1,0 +1,5 @@
+venue_id,venue_country,exclusion_reason
+33,United Kingdom,Match 32610 abandoned without ball-by-ball coverage (England vs South Africa 2022)
+26,South Africa,Match 41851 was a DLS-shortened match (West Indies in South Africa 2026)
+3308,Qatar,Match 48015 was in excluded developmental tournament comp_id 3289 (Asia Cup Rising Stars 2025 in Qatar)
+3333,Japan,Match 54711 in Japan had missing ball-by-ball coverage in raw dataset

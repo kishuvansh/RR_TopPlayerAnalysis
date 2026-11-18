@@ -1,0 +1,1 @@
+90% match-level bootstrap rank intervals across 200 resamples demonstrate robust separation for top performers (Rinku Singh, Yashasvi Jaiswal, Glenn Maxwell in batting; Josh Hazlewood, Jasprit Bumrah, Rashid Khan in bowling) with narrow uncertainty bands at the top of the order.

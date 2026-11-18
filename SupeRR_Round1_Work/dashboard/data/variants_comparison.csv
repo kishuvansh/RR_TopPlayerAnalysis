@@ -1,0 +1,9 @@
+Variant,Role,Top10_overlap,Top10_in_variant_top20,Spearman_all_common,N_common
+No early-innings exclusion,Batting,2,6,0.819,51
+No early-innings exclusion,Bowling,8,9,0.828,49
+Chase innings only,Batting,6,6,0.907,36
+Chase innings only,Bowling,8,9,0.929,41
+HIGH = top 15% LI,Batting,5,6,0.917,24
+HIGH = top 15% LI,Bowling,8,9,0.908,32
+HIGH = top 25% LI,Batting,7,10,0.937,56
+HIGH = top 25% LI,Bowling,8,10,0.939,52

@@ -1,0 +1,139 @@
+project:
+  name: SupeRR Selector Season 2 - Round 1 Pressure Rankings
+  seed: 42
+paths:
+  raw_data_dir: /Users/vansh/Downloads/SupeRR Selector Season 2 | Problem Statement/SupeRR
+    Selector Season 2 | Data Pack
+  work_dir: /Users/vansh/Downloads/SupeRR Selector Season 2 | Problem Statement/SupeRR_Round1_Work
+  processed_dir: /Users/vansh/Downloads/SupeRR Selector Season 2 | Problem Statement/SupeRR_Round1_Work/outputs/processed
+  models_dir: /Users/vansh/Downloads/SupeRR Selector Season 2 | Problem Statement/SupeRR_Round1_Work/outputs/models
+  tables_dir: /Users/vansh/Downloads/SupeRR Selector Season 2 | Problem Statement/SupeRR_Round1_Work/outputs/tables
+  figures_dir: /Users/vansh/Downloads/SupeRR Selector Season 2 | Problem Statement/SupeRR_Round1_Work/outputs/figures
+  handoff_dir: /Users/vansh/Downloads/SupeRR Selector Season 2 | Problem Statement/SupeRR_Round1_Work/handoff
+  docs_dir: /Users/vansh/Downloads/SupeRR Selector Season 2 | Problem Statement/SupeRR_Round1_Work/docs
+scope:
+  ipl_name_pattern: ^IPL\s+\d{4}$
+  t20i_format: T20I
+  start_date: '2022-01-01'
+  excluded_comp_ids:
+  - 2670
+  - 3289
+  allowed_innings:
+  - 1
+  - 2
+  exclude_super_overs: true
+  exclude_revised_target: true
+  exclude_no_winner: true
+phase0:
+  max_legal_balls: 120
+  illegal_extras_types:
+  - wide
+  - Overstep
+  - other
+  - Penalty
+  bowler_credited_dismissals:
+  - Bowled
+  - Caught
+  - LBW
+  - Stump
+  - Hit Wicket
+  non_bowler_dismissals:
+  - RunOut
+  - Retire Out
+  - Obstracting the field
+  - Obstructing the field
+  gate0_criteria:
+    max_legal_balls_limit: 120
+    wickets_remaining_min_agreement_pct: 98.0
+    winner_prediction_min_agreement_pct: 95.0
+    median_extras_residual_max_runs: 3.0
+    kept_matches_range:
+    - 790
+    - 800
+phase1:
+  cv_n_splits: 5
+  holdout_latest_season: '2026'
+  calibration_n_bins: 10
+  min_bin_balls: 200
+  calibration_error_threshold: 0.05
+  liveness_bounds:
+    lower: 0.05
+    upper: 0.95
+  features_inn1:
+  - runs_before
+  - wickets_left
+  - balls_left
+  - current_run_rate
+  - comp_group
+  - venue_scoring_baseline
+  features_inn2:
+  - runs_needed
+  - balls_left
+  - wickets_left
+  - required_run_rate
+  - current_run_rate
+  - rate_gap
+  - comp_group
+phase2:
+  leverage_index:
+    high_percentile: 0.8
+    ordinary_percentile: 0.5
+    sensitivity_percentiles:
+    - 0.15
+    - 0.2
+    - 0.25
+  ccpi:
+    high_tier_score: 60
+    extreme_tier_score: 80
+    ordinary_tier_score: 40
+    weights_inn1_bpi:
+      scoring_deficit: 0.4
+      wickets_lost: 0.35
+      innings_stage: 0.25
+    weights_inn1_bopi:
+      scoring_threat: 0.4
+      batting_resources: 0.35
+      innings_stage: 0.25
+    weights_inn2_bpi:
+      rrr_difficulty: 0.45
+      wicket_pressure: 0.3
+      time_pressure: 0.25
+    weights_inn2_bopi:
+      run_defence_difficulty: 0.45
+      wicket_threat: 0.3
+      time_pressure: 0.25
+phase3:
+  eligibility:
+    min_pressure_balls: 60
+    min_distinct_matches: 15
+    sensitivity_cutoffs:
+      balls:
+      - 40
+      - 50
+      - 60
+      - 80
+      matches:
+      - 10
+      - 15
+      - 20
+  min_spell_innings_balls: 6
+  score_weights:
+    shrunk_pressure_performance: 0.5
+    consistency: 0.25
+    resilience: 0.25
+  ridge_cv_alphas:
+  - 0.01
+  - 0.1
+  - 1.0
+  - 10.0
+  - 50.0
+  - 100.0
+  - 500.0
+  - 1000.0
+phase4:
+  bootstrap_n_resamples: 500
+  bootstrap_ci_level: 0.9
+  split_half_splits:
+  - odd_even_match_id
+  - season_2022_2023_vs_2024_2026
+  random_weight_sensitivity_draws: 25

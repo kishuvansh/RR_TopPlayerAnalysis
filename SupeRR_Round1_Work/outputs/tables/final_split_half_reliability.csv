@@ -1,0 +1,6 @@
+Check,Batting_r,Batting_n,Bowling_r,Bowling_n
+Odd vs even match id (composite),-0.031,62,0.167,58
+Odd vs even match id (pressure rating only),0.005,62,0.17,58
+2022-23 vs 2024-26 (composite),0.201,62,0.151,61
+Predict 2024-26 pressure rating from 2022-23 pressure rating,0.203,62,0.166,61
+Predict 2024-26 pressure rating from 2022-23 all-ball rating (baseline),0.117,62,0.157,61

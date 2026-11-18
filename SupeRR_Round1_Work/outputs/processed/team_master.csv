@@ -1,0 +1,39 @@
+team_id,canonical_name,team_type,matches_in_eligible_data,is_full_member
+1,Chennai Super Kings,IPL Franchise,70,False
+2,Mumbai Indians,IPL Franchise,72,False
+3,Rajasthan Royals,IPL Franchise,74,False
+4,Punjab Kings,IPL Franchise,70,False
+5,Royal Challengers Bengaluru,IPL Franchise,74,False
+7,Delhi Capitals,IPL Franchise,68,False
+8,Kolkata Knight Riders,IPL Franchise,66,False
+17,New Zealand,National Side,74,True
+18,India,National Side,105,True
+19,South Africa,National Side,49,True
+20,Australia,National Side,52,True
+21,Bangladesh,National Side,70,True
+22,England,National Side,60,True
+23,Ireland,National Side,40,True
+24,Netherlands,National Side,12,False
+25,Pakistan,National Side,87,True
+26,Scotland,National Side,6,False
+27,Sri Lanka,National Side,64,True
+28,West Indies,National Side,84,True
+72,Zimbabwe,National Side,51,True
+78,Afghanistan,National Side,50,True
+89,Canada,National Side,3,False
+222,India A,National Side,0,False
+242,Sunrisers Hyderabad,IPL Franchise,72,False
+272,United Arab Emirates,National Side,20,False
+282,Nepal,National Side,3,False
+283,Hong Kong,National Side,8,False
+311,Singapore,National Side,3,False
+312,Kuwait,National Side,3,False
+313,Oman,National Side,3,False
+315,United States Of America,National Side,3,False
+341,Pakistan A,National Side,0,False
+3093,Bangladesh A,National Side,0,False
+3508,Gujarat Titans,IPL Franchise,75,False
+3509,Lucknow Super Giants,IPL Franchise,69,False
+3674,Sri Lanka A,National Side,0,False
+3886,Japan,National Side,0,False
+4444,Afghanistan A,National Side,0,False

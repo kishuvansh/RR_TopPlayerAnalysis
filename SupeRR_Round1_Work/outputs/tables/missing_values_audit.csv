@@ -1,0 +1,9 @@
+column,inn1_nulls,inn2_nulls,handling_rule
+runs_before,0,0,Zero missing required
+wickets_left,0,0,Zero missing required
+balls_left,0,0,Zero missing required
+current_run_rate,0,0,Chase feature; intentionally NaN in innings 1
+runs_needed,97038,0,Chase feature; intentionally NaN in innings 1
+required_run_rate,97038,0,Chase feature; intentionally NaN in innings 1
+rate_gap,97038,0,Chase feature; intentionally NaN in innings 1
+bowler_credited_wicket,0,0,Zero missing required

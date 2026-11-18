@@ -1,0 +1,1 @@
+Grouped-CV error profiles across alphas display a smooth, convex curve with distinct out-of-fold MSE minima at alpha = 300.0 for batting and alpha = 500.0 for bowling, demonstrating principled regularization that shrinks noise while preserving true player skill separation.

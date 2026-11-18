@@ -1,0 +1,6 @@
+match_id,innings,innings_ball_num,field,old_value,new_value,evidence,decision_id
+40709,2,117,dismissed_player_id,NaN,7897.0,Delivery 117 was a Retire Out. Hardik Pandya (striker 3330) remained at crease facing balls 118-123. Non-striker Tilak Varma (7897) departed and was replaced by the next batter.,D12
+19960,1,78,non_striker_id / non_striker_name,2416 (Kyle Mayers),4986 (Rovman Powell),Mayers was dismissed on ball 63. Rovman Powell was the active non-striker on balls 77 and 79. Scorer delayed updating non-striker ID for 1 ball.,D13
+20182,1,70,non_striker_id / non_striker_name,2003 (Bhanuka Rajapaksa),142 (Shikhar Dhawan),Rajapaksa was dismissed on ball 67. Shikhar Dhawan was the active non-striker on balls 69 and 71.,D13
+28059,2,69,non_striker_id / non_striker_name,7094 (Sikandar Raza),4814 (Clive Madande),Raza was run out on ball 57. Active partner on adjacent deliveries was Clive Madande.,D13
+28059,2,77,non_striker_id / non_striker_name,7094 (Sikandar Raza),1101 (Ryan Burl),Raza was run out on ball 57. Active partner on adjacent deliveries was Ryan Burl.,D13

@@ -1,0 +1,1 @@
+Innings 2 Leverage Index escalates monotonically from ~0.60 in the Powerplay to a peak of 2.45 in Over 20, concentrating extreme game-swing leverage in the death overs. Innings 1 exhibits steady, flat leverage across overs 1-17 (~0.85) before rising moderately to 1.30 in the final over.

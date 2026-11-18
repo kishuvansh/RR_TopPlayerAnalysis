@@ -1,0 +1,5 @@
+Split_Type,Batting_Spearman_r,Bowling_Spearman_r
+Odd vs Even Match ID,-0.053,0.2355
+Temporal (2022-23 vs 2024-26),0.2285,0.0849
+Predictive Validity (Early Pressure -> Late Pressure),0.2028,0.0879
+Predictive Baseline (Early Overall -> Late Pressure),0.1329,0.0524

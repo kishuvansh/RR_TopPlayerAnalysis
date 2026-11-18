@@ -1,0 +1,1 @@
+Composite pressure rating shows zero pathological correlation with delivery exposure (r = 0.109 for batters, r = 0.093 for bowlers), confirming that ratings measure efficiency per pressure opportunity rather than rewarding sheer volume.

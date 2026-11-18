@@ -1,0 +1,1 @@
+HIGH leverage deliveries tightly concentrate in low balls-remaining states (Over 16-20 death overs) and compressed rate gaps [-2 to +4 runs/over] where win probability is balanced. ORDINARY leverage dominates early overs (balls_left > 60) and blown-out rate gaps where match outcome is virtually predetermined.

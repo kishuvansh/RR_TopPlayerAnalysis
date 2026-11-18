@@ -1,0 +1,5 @@
+Tier,Deliveries,Mean_LI,Share_Innings2_pct,Share_Death_Overs_pct,Runs_per_Over,Dot_pct,Boundary_pct,Wicket_pct,Mean_abs_dWP
+HIGH pressure (top 20% live LI),28439,2.217,46.0,31.3,9.02,28.8,19.2,5.98,0.0247
+"Middle (50th-80th pct, unused)",42659,1.153,46.9,20.8,8.78,29.8,18.7,5.53,0.0163
+ORDINARY (bottom 50% live LI),71097,0.584,31.3,19.8,8.84,29.3,18.6,5.4,0.0108
+Dead / decided (WP<5% or >95%),25259,0.164,98.7,39.5,8.89,30.8,19.3,6.86,0.0036

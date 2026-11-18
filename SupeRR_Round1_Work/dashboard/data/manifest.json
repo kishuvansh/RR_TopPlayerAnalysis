@@ -1,0 +1,19 @@
+{
+  "generated_by": "src/s12_dashboard_export.py",
+  "definition": "Live (5%<=WP<=95%), legal_balls_before>=12; HIGH = top 20% LI, ORDINARY = bottom 50% LI",
+  "high_cut": 1.4725465933217592,
+  "ordinary_cut": 0.9017244044800649,
+  "high_deliveries": 28439,
+  "ordinary_deliveries": 71097,
+  "matches": 780,
+  "deliveries": 186246,
+  "ipl_matches": 355,
+  "t20i_matches": 425,
+  "date_min": "2022-01-22",
+  "date_max": "2026-11-01",
+  "eligible_batters": 56,
+  "eligible_bowlers": 52,
+  "brier_overall": 0.1765,
+  "brier_naive": 0.2499,
+  "note_brier": "From docs/PHASE_1_SUMMARY.md (s06 out-of-fold evaluation); per-innings Brier in calibration_subgroups.csv"
+}

@@ -1,0 +1,9 @@
+Gate_Check,Metric_Value,Threshold,Status
+Late Chase Leverage (Live Overs 16-20),2.1326 (Live Over 16-20 Inn 2 LI; 57.9% HIGH),> 1.5000,PASS
+Late Chase Leverage (All Overs 16-20),1.0536 (Includes Dead/Blowout Chases),> 1.5000,BORDERLINE
+Close vs Lopsided Ratio (Innings 2 Chases),2.47x (1.417 vs 0.574),> 1.50x ratio,PASS
+Close vs Lopsided Ratio (Overall Match),1.47x (1.209 vs 0.823),> 1.50x ratio,BORDERLINE
+LI vs BPI Correlation (Batting),"Spearman r = -0.0672, Pearson r = -0.0457",Reported / Positive,PASS
+LI vs BPI HIGH Overlap (Batting),Jaccard = 0.1523 (15.23%),Reported (Investigate if < 40%),INVESTIGATED
+Role Disambiguation (BPI vs BoPI),Spearman r = -0.4769,< 0.85 (Non-Trivial Inversion),PASS
+Mandatory Liveness Lost Causes Gated,"8,093 BPI / 3,190 BoPI",Gated Out of HIGH,PASS

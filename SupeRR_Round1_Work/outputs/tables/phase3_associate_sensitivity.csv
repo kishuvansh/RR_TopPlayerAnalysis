@@ -1,0 +1,51 @@
+Role,Player_ID,Player_Name,Full_Rank,No_Associate_Rank,Rank_Shift
+Batter,6819,Yashasvi Jaiswal,1,1.0,0
+Batter,838,Glenn Maxwell,2,2.0,0
+Batter,4708,Rinku Singh,3,4.0,-1
+Batter,23450,Sai Sudharsan,4,5.0,-1
+Batter,5553,Phil Salt,5,3.0,2
+Batter,25669,Priyansh Arya,6,6.0,0
+Batter,24017,Brian Bennett,7,7.0,0
+Batter,6931,Pathum Nissanka,8,9.0,-1
+Batter,4847,Finn Allen,9,8.0,1
+Batter,6281,Abhishek Sharma,10,10.0,0
+Batter,818,Mitchell Marsh,11,11.0,0
+Batter,6280,Harry Brook,12,12.0,0
+Batter,7901,Parvez Emon,13,,Drop Below Cutoff
+Batter,4007,Ryan Rickelton,14,14.0,0
+Batter,1699,Suryakumar Yadav,15,13.0,2
+Batter,3091,Sahibzada Farhan,16,19.0,-3
+Batter,5939,Cameron Green,17,22.0,-5
+Batter,4854,Rachin Ravindra,18,18.0,0
+Batter,1205,Jonny Bairstow,19,17.0,2
+Batter,47,Virat Kohli,20,16.0,4
+Batter,3024,Mohammad Rizwan,21,15.0,6
+Batter,6396,Tim David,22,21.0,1
+Batter,50284,Vaibhav Sooryavanshi,23,20.0,3
+Batter,1077,David Miller,24,24.0,0
+Batter,109,Wriddhiman Saha,25,25.0,0
+Bowler,830,Josh Hazlewood,1,1.0,0
+Bowler,2933,Jasprit Bumrah,2,2.0,0
+Bowler,4722,Rashid Khan,3,3.0,0
+Bowler,6256,Varun Chakravarthy,4,4.0,0
+Bowler,1612,Yuzvendra Chahal,5,5.0,0
+Bowler,2681,Taskin Ahmed,6,9.0,-3
+Bowler,1758,Patrick Cummins,7,7.0,0
+Bowler,8661,Matheesha Pathirana,8,6.0,2
+Bowler,4692,Lockie Ferguson,9,8.0,1
+Bowler,4219,Krunal Pandya,10,10.0,0
+Bowler,2636,Adam Zampa,11,,Drop Below Cutoff
+Bowler,29888,Harshit Rana,12,17.0,-5
+Bowler,6669,Mohsin Khan,13,11.0,2
+Bowler,4900,Wanindu Hasaranga,14,14.0,0
+Bowler,2315,Reece Topley,15,12.0,3
+Bowler,781,Sunil Narine,16,13.0,3
+Bowler,2261,Harshal Patel,17,15.0,2
+Bowler,5041,Mukesh Kumar,18,18.0,0
+Bowler,5809,Naveen ul Haq,19,19.0,0
+Bowler,6806,Tushar Deshpande,20,20.0,0
+Bowler,3628,Kagiso Rabada,21,22.0,-1
+Bowler,3275,Alzarri Joseph,22,23.0,-1
+Bowler,2984,Sikandar Raza,23,21.0,2
+Bowler,3644,Kuldeep Yadav,24,16.0,8
+Bowler,19316,Maheesh Theekshana,25,25.0,0

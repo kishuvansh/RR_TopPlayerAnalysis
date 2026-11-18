@@ -1,0 +1,23 @@
+role,rank,name,median_rank,best,worst,pct_draws_in_top10
+bat,1.0,Rinku Singh,1.0,1.0,2.0,100.0
+bat,2.0,Glenn Maxwell,2.0,2.0,12.0,98.5
+bat,3.0,Krunal Pandya,3.0,3.0,7.0,100.0
+bat,4.0,Rashid Khan,5.0,1.0,9.0,100.0
+bat,5.0,Tim David,6.0,3.0,16.0,89.0
+bat,6.0,Suryakumar Yadav,6.0,4.0,10.0,100.0
+bat,7.0,Harry Brook,7.0,4.0,22.0,82.5
+bat,8.0,David Miller,8.0,7.0,18.0,88.0
+bat,9.0,Sam Curran,9.0,4.0,18.0,71.5
+bat,10.0,Jos Buttler,12.0,6.0,19.0,33.5
+bat,,MEAN TOP-10 OVERLAP ACROSS DRAWS,8.63,,,
+bowl,1.0,Josh Hazlewood,1.0,1.0,4.0,100.0
+bowl,2.0,Jasprit Bumrah,2.0,2.0,6.0,100.0
+bowl,3.0,Rashid Khan,3.0,1.0,6.0,100.0
+bowl,4.0,Varun Chakravarthy,4.0,4.0,10.0,100.0
+bowl,5.0,Yuzvendra Chahal,5.0,4.0,12.0,97.5
+bowl,6.0,Lockie Ferguson,7.0,3.0,11.0,98.5
+bowl,7.0,Matheesha Pathirana,7.0,5.0,9.0,100.0
+bowl,8.0,Gudakesh Motie,7.0,2.0,11.0,99.5
+bowl,9.0,Krunal Pandya,9.0,5.0,10.0,100.0
+bowl,10.0,Harshit Rana,9.0,6.0,18.0,78.0
+bowl,,MEAN TOP-10 OVERLAP ACROSS DRAWS,9.735,,,

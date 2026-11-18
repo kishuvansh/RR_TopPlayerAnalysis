@@ -1,0 +1,105 @@
+# ==========================================
+# SupeRR Selector Season 2 - .gitignore
+# ==========================================
+
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Microsoft Office temporary files
+~$*.docx
+~$*.xlsx
+~$*.pptx
+.~*
+*.tmp
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# IDE and Editor configs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Testing and linters
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Node / Web artifacts (dashboard, report builder)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ------------------------------------------
+# Raw & Large Data Files (Keep repo lightweight & clean)
+# ------------------------------------------
+# Raw organizer data pack (~80MB uncompressed; see REPRODUCE.md on how to place it)
+SupeRR Selector Season 2 | Data Pack/
+SupeRR Selector Season 2 | Data Pack.zip
+
+# Large intermediate binary parquet files (~26MB; regenerated deterministically via pipeline)
+SupeRR_Round1_Work/outputs/processed/*.parquet
+*.parquet
+
+# Redundant zip archives (contents are already tracked as individual files)
+SupeRR_Round1_Work/handoff.zip
+SupeRR_Round1_Work/outputs/tables.zip
+SupeRR_Round1_Work/outputs/figures.zip
+*.zip
+
+# Temporary scratch scripts
+SupeRR_Round1_Work/experiment.py
+
+# Legacy exploratory scripts folder
+scripts/
+
+# Ensure essential small processed summary CSVs are preserved
+!SupeRR_Round1_Work/outputs/processed/*.csv

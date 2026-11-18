@@ -1,0 +1,6 @@
+Check ID,Metric,Raw Value,Original Threshold,Status
+max_legal_balls_limit,Max legal balls per innings <= 120,120 (0 innings > 120),<= 120,PASS
+wickets_remaining_verification,"In won by N wickets matches, 2nd-inn wickets == 10-N",99.74% (380 / 381),>= 98.0%,PASS
+winner_prediction_agreement,Estimated 2nd-inn total vs target agrees with winner,"95.38% (defended: 97.43%, chase: 93.35%)",>= 95.0%,BORDERLINE
+median_extras_residual,Median extras-calibration residual <= 3 runs,1.656 runs,<= 3.0 runs,PASS
+kept_matches_count,Kept clean regulation matches count,780 matches,790 - 800,BORDERLINE

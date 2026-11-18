@@ -1,0 +1,1 @@
+Ridge regression coefficients and Empirical Bayes shrunk means display near-perfect linear alignment (Pearson r = 0.919 for batting, r = 0.929 for bowling), verifying that L2 penalty shrinkage perfectly mirrors Bayesian shrinkage toward the population mean.

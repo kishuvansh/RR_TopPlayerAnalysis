@@ -1,0 +1,17 @@
+{
+  "calibrated_coefficients": {
+    "wide": 1.1288818979484316,
+    "Overstep": 1.199657861658686,
+    "legbyes": 1.3351711808706683,
+    "byes": 2.1786380836274235,
+    "other": 1.082359188164405,
+    "Penalty": 0.0
+  },
+  "metrics": {
+    "matches_in_calibration": 385,
+    "median_absolute_residual_runs": 1.6559927141963087,
+    "mean_absolute_residual_runs": 2.324917594287671,
+    "r2_score": 0.7135012055357082
+  },
+  "description": "Linear regression without intercept of (Won_by_runs_margin - bat_runs_diff) on extras_count_diffs."
+}

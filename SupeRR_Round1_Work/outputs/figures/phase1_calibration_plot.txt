@@ -1,0 +1,1 @@
+Phase 1 win-probability model demonstrates excellent reliability across all 10 probability bins with maximum calibration error of 0.0385 (within ±0.05 Gate 1 bound) and overall Brier score of 0.1765 vs naive 0.2498.

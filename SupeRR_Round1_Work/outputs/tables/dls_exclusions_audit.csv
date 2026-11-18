@@ -1,0 +1,27 @@
+match_id,match_date,comp_name,result,revised_target,first_inn_revised_overs,second_inn_revised_overs,exclusion_mechanism
+13612,2022-02-11,Sri Lanka in Australia T20I Series 2022,Australia Won by 20 runs (D/L method),143.0,,114.0,Metadata revised_target populated
+16753,2022-08-15,Afghanistan in Ireland T20I Series 2022,Afghanistan Won by 27 Runs,,66.0,,"Shortened match (revised_overs populated, revised_target blank)"
+16754,2022-08-17,Afghanistan in Ireland T20I Series 2022,Ireland Won by 7 Wickets(D/L Method),56.0,,42.0,Metadata revised_target populated
+17395,2022-09-23,Australia in India T20I Series 2022,India Won by 6 Wickets,91.0,48.0,48.0,Metadata revised_target populated
+21586,2023-05-29,IPL 2023,Chennai Super Kings Won by 5 wickets  (DLS method),171.0,,90.0,Metadata revised_target populated
+19959,2023-03-25,West Indies in South Africa T20I Series 2023,West Indies won by 3 wickets,,66.0,,"Shortened match (revised_overs populated, revised_target blank)"
+21070,2023-03-27,Ireland in Bangladesh T20I Series 2023,Bangladesh Won by 22 Runs (DLS method),104.0,,48.0,Metadata revised_target populated
+21071,2023-03-29,Ireland in Bangladesh T20I Series 2023,Bangladesh Won by 77 Runs,203.0,102.0,102.0,Metadata revised_target populated
+24822,2023-08-18,India in Ireland T20I Series 2023,India Won by 2 Runs (DLS method),,,,"Rain-curtailed match (DLS in result text, revised fields blank)"
+28046,2023-12-12,India in South Africa T20I Series 2023,South Africa won by 5 wickets (DLS),152.0,,90.0,Metadata revised_target populated
+28334,2023-12-31,Bangladesh in New Zealand T20I Series 2023,New Zealand won by 17runs (DLS Method),,,,"Rain-curtailed match (DLS in result text, revised fields blank)"
+29984,2024-02-25,Australia in New Zealand T20I Series 2024,Australia Won by 27 Runs (DLS method),126.0,,60.0,Metadata revised_target populated
+37354,2024-11-14,Pakistan in Australia T20I Series 2024,Australia Won by 29 runs,94.0,42.0,42.0,Metadata revised_target populated
+36098,2024-08-28,South Africa in West Indies T20I Series 2024,West Indies Won by 8 wickets (DLS),116.0,78.0,78.0,Metadata revised_target populated
+34428,2024-07-28,India in Sri Lanka T20I Series 2024,India Won by 7 wickets(D/L Method),78.0,,48.0,Metadata revised_target populated
+36208,2025-09-10,South Africa in England T20I Series 2025,South Africa Won by 14 runs(DLS method),69.0,54.0,30.0,Metadata revised_target populated
+40727,2025-04-18,IPL 2025,Punjab Kings Won by 5 wickets,96.0,84.0,84.0,Metadata revised_target populated
+40749,2025-05-06,IPL 2025,Gujarat Titans Won by 3 wickets (DLS Method),147.0,,114.0,Metadata revised_target populated
+39809,2025-03-18,Pakistan in New Zealand T20I Series 2025,New Zealand Won by 5 wickets,136.0,90.0,90.0,Metadata revised_target populated
+41851,2026-02-01,West Indies in South Africa T20I Series 2026,West Indies Won by 6 runs(DLS Method),125.0,60.0,60.0,Metadata revised_target populated
+50137,2026-04-07,IPL 2026,Rajasthan Royals Won by 27 runs,151.0,66.0,66.0,Metadata revised_target populated
+50371,2026-05-07,IPL 2026,Lucknow Super Giants Won by 9 runs (DLS method),213.0,114.0,114.0,Metadata revised_target populated
+48610,2026-01-30,England in Sri Lanka T20I Series 2026,England Won by 11 runs (DLS method),115.0,102.0,90.0,Metadata revised_target populated
+48611,2026-02-01,England in Sri Lanka T20I Series 2026,England Won by 6 wickets(DLS Method),168.0,,102.0,Metadata revised_target populated
+50190,2026-05-02,New Zealand in Bangladesh T20I Series 2026,New Zealand Won by 6 wickets (DLS Method),103.0,90.0,90.0,Metadata revised_target populated
+54711,2026-09-22,India in Japan T20I Match 2026,India Won by 2 runs,33.0,30.0,30.0,Metadata revised_target populated

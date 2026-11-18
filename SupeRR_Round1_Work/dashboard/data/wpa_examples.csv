@@ -1,0 +1,3 @@
+role,player_id,player,match_id,match_date,competition,match,innings,over,ball_in_over,striker,bowler,runs_needed,balls_left,wickets_left,outcome,leverage_index,wp_before,wp_after,delta_wp_batting
+bat,4708,Rinku Singh,20193,2023-04-09,IPL 2023,Gujarat Titans v Kolkata Knight Riders,2,20,6,Rinku Singh,Yash Dayal,2.2781831252840448,1,3,6 run(s),13.531590442741154,0.2313825468969148,1.0,0.7686174531030852
+bowl,830,Josh Hazlewood,40735,2025-04-24,IPL 2025,Royal Challengers Bengaluru v Rajasthan Royals,2,19,4,Jofra Archer,Josh Hazlewood,15.613354306154719,9,4,Wicket,4.150665932005684,0.5926392867016129,0.3209954070301039,-0.27164387967150905

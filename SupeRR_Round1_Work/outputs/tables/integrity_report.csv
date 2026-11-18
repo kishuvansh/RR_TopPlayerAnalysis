@@ -1,0 +1,13 @@
+check,rows_affected,action
+Player identity: duplicate names across distinct IDs,14,Logged in player_duplicate_names.csv. Maintained strict player_id separation (Decision D07). Disambiguation notes added.
+Ball sequence continuity (innings_ball_num 1..N contiguous),0,"Verified. 0 gaps across all 1,560 match-innings. Overid convention 1-20 documented."
+Batting: Retire Out missing dismissed_player_id (match 40709 ball 117),1,"Fixed: imputed dismissed_player_id = 7897 (Tilak Varma retired out, Hardik Pandya remained striker)."
+Batting: dismissed batter appearing on later ball,4,"Fixed 4 isolated single-ball non-striker recorder typos (striker was unaffected; Mayers, Rajapaksa, Raza)."
+Batting: maximum wickets per innings <= 10,0,"Verified. Max wickets in any innings is 10 (all-out), 0 innings exceed 10."
+Bowling: one bowler per over,34,Flagged 34 split overs as legitimate mid-over bowler injury replacements (legal cricket law 17.8).
+Bowling: bowler legal balls <= 24 in 20-over innings,1,Flagged match 41509: umpire miscounted over 12 (7 legal balls bowled by Aaron Hardie; 25 balls total). Retained match.
+Boundary flags and score domain integrity,22,"Verified. 0 is_four/six mismatches, 0 negative runs, 0 runs > 6. 19 all-run fours and 3 all-run sixes documented."
+Dismissal legality on wide deliveries,38,"Verified. All 38 wide dismissals are legally valid (Stump: 24, RunOut: 14). Zero caught/bowled on wides."
+"Cross-file referential integrity (matches, teams, players)",0,"Verified complete referential integrity. 0 orphan matches, 0 orphan teams, 0 orphan players."
+IPL Impact Player substitution tracking,1078,Documented Impact Player substitutions. Impact batters receive order according to crease entry (batting_order 1..11+).
+Competition comparability (IPL vs T20I tiers),186246,Generated competition_tier_comparability.csv. Logged structural gap (IPL 8.81 RPO vs FM T20I 8.11 RPO vs Assoc 7.22 RPO); comp_tier fixed as mandatory control in Ridge/Win-Prob models.
