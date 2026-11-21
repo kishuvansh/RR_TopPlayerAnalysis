@@ -98,8 +98,9 @@ SupeRR_Round1_Work/outputs/figures.zip
 # Temporary scratch scripts
 SupeRR_Round1_Work/experiment.py
 
-# Legacy exploratory scripts folder
-scripts/
+# Legacy exploratory scripts folder (root only)
+/scripts/
+!.github/scripts/
 
 # Ensure essential small processed summary CSVs are preserved
 !SupeRR_Round1_Work/outputs/processed/*.csv
