@@ -1,55 +1,58 @@
-name: Keep Streamlit app awake
+name: Keep Streamlit App Awake
 
-# Streamlit Community Cloud sleeps apps after 12 hours without traffic.
-# This opens the app in a headless browser every 4 hours so it never reaches that limit.
 on:
   schedule:
-    - cron: "23 */4 * * *"   # every 4 hours at :23 (UTC); off the hour because GitHub delays top-of-hour jobs
-  workflow_dispatch:          # lets you run it by hand from the Actions tab
+    # Streamlit Community Cloud puts apps to sleep after ~12 hours of inactivity.
+    # Runs every 4 hours at :15 past the hour (UTC) to keep the app continuously warm.
+    - cron: "15 */4 * * *"
+  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
 
 permissions:
   contents: read
-  actions: write              # only used by the last step, to keep this schedule enabled
+  actions: write # Used to keep schedule enabled after 60 days of repo inactivity
 
 concurrency:
   group: keep-awake
   cancel-in-progress: true
 
 jobs:
-  visit:
+  wake-app:
+    name: Visit Streamlit App (Headless Chrome)
     runs-on: ubuntu-latest
-    timeout-minutes: 15
-    env:
-      # A repository variable STREAMLIT_APP_URL overrides this if the app ever moves.
-      APP_URL: ${{ vars.STREAMLIT_APP_URL || 'https://rajasthanroyals.streamlit.app/' }}
+    timeout-minutes: 10
+
     steps:
-      - uses: actions/checkout@v4
-        with:
-          sparse-checkout: .github/scripts
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: "3.11"
+          cache: "pip"
 
-      - name: Install Playwright
+      - name: Install Selenium & Driver Manager
         run: |
-          pip install playwright==1.48.0
-          python -m playwright install --with-deps chromium
+          python -m pip install --upgrade pip
+          pip install selenium webdriver-manager
 
-      - name: Visit the app (wakes it if asleep)
-        run: python .github/scripts/keep_awake.py
+      - name: Run Awake Script
+        env:
+          APP_URL: ${{ vars.STREAMLIT_APP_URL || 'https://rajasthanroyals.streamlit.app/' }}
+          EXPECT_TEXT: "Rinku Singh"
+          TIMEOUT_S: "240"
+        run: |
+          python .github/scripts/keep_awake.py
 
-      - name: Upload screenshot if the app did not load
+      - name: Upload Screenshot on Failure
         if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: keep-awake-failure
+          name: keep-awake-failure-screenshot
           path: keep_awake_failure.png
           if-no-files-found: ignore
 
-      # GitHub turns off scheduled workflows in repos with no activity for 60 days.
-      # Re-enabling the workflow through the API counts as activity and keeps the schedule running.
-      - name: Keep this schedule enabled
+      - name: Keep schedule enabled
         if: always()
         env:
           GH_TOKEN: ${{ github.token }}
